@@ -44,9 +44,9 @@ export function LandingClient({ tenantSlug }: LandingClientProps) {
             TEAM<span className="text-primary">BOTO</span>
           </span>
           <div className="flex items-center gap-6">
-            <a href="#" className="text-xs text-text-muted/60 hover:text-text transition-colors">Privacy Policy</a>
-            <a href="#" className="text-xs text-text-muted/60 hover:text-text transition-colors">Termos de Uso</a>
-            <a href="#" className="text-xs text-text-muted/60 hover:text-text transition-colors">Contato</a>
+            <a href="#" className="text-xs text-text-muted/90 hover:text-text transition-colors">Privacy Policy</a>
+            <a href="#" className="text-xs text-text-muted/90 hover:text-text transition-colors">Termos de Uso</a>
+            <a href="#" className="text-xs text-text-muted/90 hover:text-text transition-colors">Contato</a>
           </div>
           <p className="text-xs text-text-muted/40">
             &copy; {new Date().getFullYear()} TEAMBOTO Running Club

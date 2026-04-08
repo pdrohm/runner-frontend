@@ -70,7 +70,7 @@ export function FinalCTA({ quizUrl }: FinalCTAProps) {
             ].map(({ icon: Icon, text }) => (
               <div
                 key={text}
-                className="flex items-center gap-2.5 text-text-muted/60"
+                className="flex items-center gap-2.5 text-text-muted/90"
               >
                 <Icon size={16} className="text-primary/40" />
                 <span className="text-sm">{text}</span>

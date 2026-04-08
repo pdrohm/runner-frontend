@@ -48,7 +48,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
               </span>
-              <span className="text-xs font-semibold text-text-muted tracking-wide uppercase">
+              <span className="text-xs font-semibold text-text/60 tracking-wide uppercase">
                 +500 corredores ativos
               </span>
             </motion.div>
@@ -73,7 +73,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              className="mt-6 text-lg md:text-xl text-text-muted/90 max-w-lg leading-relaxed"
+              className="mt-6 text-lg md:text-xl text-text/70 max-w-lg leading-relaxed"
             >
               Planilha de corrida personalizada pelo Coach Boto.
               <br className="hidden sm:block" />
@@ -97,7 +97,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </Link>
-              <span className="text-sm text-text-muted/60 self-center">
+              <span className="text-sm text-text/60 self-center">
                 Leva menos de 2 minutos
               </span>
             </motion.div>
@@ -117,13 +117,13 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
                   <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
                     <Timer size={16} className="text-primary" />
                   </div>
-                  <span className="text-xs font-semibold text-text-muted uppercase tracking-wider">
+                  <span className="text-xs font-semibold text-text/60 uppercase tracking-wider">
                     Pace Atual
                   </span>
                 </div>
                 <div className="text-5xl font-extrabold font-display text-text tracking-tight">
                   5:29
-                  <span className="text-lg text-text-muted font-medium ml-1">
+                  <span className="text-lg text-text/60 font-medium ml-1">
                     /km
                   </span>
                 </div>
@@ -135,7 +135,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
                     transition={{ duration: 1.5, delay: 1.2, ease: "easeOut" }}
                   />
                 </div>
-                <div className="mt-2 flex justify-between text-[10px] text-text-muted">
+                <div className="mt-2 flex justify-between text-[10px] text-text/60">
                   <span>Meta: 5:00/km</span>
                   <span className="text-primary font-semibold">78%</span>
                 </div>
@@ -150,13 +150,13 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
               >
                 <div className="flex items-center gap-2 mb-3">
                   <Activity size={14} className="text-accent-warm" />
-                  <span className="text-[10px] font-semibold text-text-muted uppercase tracking-wider">
+                  <span className="text-[10px] font-semibold text-text/60 uppercase tracking-wider">
                     Esta Semana
                   </span>
                 </div>
                 <div className="text-3xl font-extrabold font-display text-text">
                   32.4
-                  <span className="text-sm text-text-muted font-medium ml-1">
+                  <span className="text-sm text-text/60 font-medium ml-1">
                     km
                   </span>
                 </div>
@@ -175,7 +175,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
                           }}
                         />
                       </div>
-                      <span className="text-[8px] text-text-muted/50">
+                      <span className="text-[8px] text-text/50">
                         {["S", "T", "Q", "Q", "S", "S", "D"][i]}
                       </span>
                     </div>
@@ -192,7 +192,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
               >
                 <div className="flex items-center gap-2 mb-3">
                   <Flame size={14} className="text-accent-warm" />
-                  <span className="text-[10px] font-semibold text-text-muted uppercase tracking-wider">
+                  <span className="text-[10px] font-semibold text-text/60 uppercase tracking-wider">
                     Sequência
                   </span>
                 </div>
@@ -200,7 +200,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
                   <span className="text-4xl font-extrabold font-display text-text">
                     12
                   </span>
-                  <span className="text-sm text-text-muted">semanas</span>
+                  <span className="text-sm text-text/60">semanas</span>
                 </div>
                 <div className="mt-3 flex items-center gap-2">
                   <TrendingUp size={14} className="text-primary" />

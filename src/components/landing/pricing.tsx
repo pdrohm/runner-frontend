@@ -148,7 +148,7 @@ export function Pricing({ quizUrl }: PricingProps) {
                       size={16}
                       className={cn(
                         "flex-shrink-0 mt-0.5",
-                        plan.highlighted ? "text-primary" : "text-text-muted/60"
+                        plan.highlighted ? "text-primary" : "text-text-muted/90"
                       )}
                     />
                     <span className="text-text-muted">{feature}</span>
