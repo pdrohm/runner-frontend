@@ -7,13 +7,13 @@ import { cn } from "@/lib/utils";
 const features = [
   {
     icon: Brain,
-    title: "IA que entende seu ritmo",
-    label: "INTELIGÊNCIA ARTIFICIAL",
+    title: "Coach que entende seu ritmo",
+    label: "METODOLOGIA DO COACH",
     description:
-      "Algoritmo que analisa seu histórico, nível e objetivos. Nada de planilhas genéricas — cada treino é pensado para você.",
+      "O Coach Boto analisa seu histórico, nível e objetivos. Nada de planilhas genéricas — cada treino é pensado para você.",
     highlights: [
-      "Análise de dados pessoais",
-      "Ajuste automático de volume",
+      "Análise personalizada",
+      "Ajuste de volume pelo coach",
       "Progressão inteligente",
     ],
     gradient: "from-primary/10 to-primary-dark/5",

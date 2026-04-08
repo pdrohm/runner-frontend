@@ -7,17 +7,17 @@ const faqItems = [
   {
     question: "Como funciona a planilha personalizada?",
     answer:
-      "Após responder nosso quiz de avaliação (menos de 2 minutos), nossa inteligência artificial analisa seu nível, objetivo, rotina e histórico para criar uma planilha de treino 100% personalizada. O plano inclui zonas de pace calculadas, periodização completa e detalhamento de cada sessão.",
+      "Após responder nosso quiz de avaliação (menos de 2 minutos), o Coach Boto analisa seu nível, objetivo, rotina e histórico para criar uma planilha de treino 100% personalizada. O plano inclui zonas de pace calculadas, periodização completa e detalhamento de cada sessão.",
   },
   {
     question: "Preciso ter experiência em corrida?",
     answer:
-      "Não! A planilha é adaptada para todos os níveis — do iniciante que nunca correu até o corredor avançado buscando recorde. A IA ajusta volume, intensidade e progressão de acordo com seu nível atual.",
+      "Não! A planilha é adaptada para todos os níveis — do iniciante que nunca correu até o corredor avançado buscando recorde. O coach ajusta volume, intensidade e progressão de acordo com seu nível atual.",
   },
   {
     question: "O que está incluído na assinatura?",
     answer:
-      "Sua assinatura inclui: planilha de treino personalizada por IA, cálculo de zonas de pace, plano semanal detalhado, acesso à comunidade exclusiva no WhatsApp, suporte por mensagem e ajustes periódicos na planilha conforme seu plano escolhido.",
+      "Sua assinatura inclui: planilha de treino personalizada pelo Coach Boto, cálculo de zonas de pace, plano semanal detalhado, acesso à comunidade exclusiva no WhatsApp, suporte por mensagem e ajustes periódicos na planilha conforme seu plano escolhido.",
   },
   {
     question: "Posso cancelar a qualquer momento?",
@@ -32,7 +32,7 @@ const faqItems = [
   {
     question: "A planilha é ajustada ao longo do tempo?",
     answer:
-      "Sim! Dependendo do seu plano, a planilha recebe ajustes mensais ou quinzenais baseados no seu progresso, feedback e resultados. A IA recalcula volume e intensidade para garantir evolução contínua e segura.",
+      "Sim! Dependendo do seu plano, a planilha recebe ajustes mensais ou quinzenais baseados no seu progresso, feedback e resultados. O coach recalcula volume e intensidade para garantir evolução contínua e segura.",
   },
 ];
 

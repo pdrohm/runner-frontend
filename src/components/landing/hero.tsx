@@ -75,7 +75,7 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="mt-6 text-lg md:text-xl text-text-muted/90 max-w-lg leading-relaxed"
             >
-              Planilha de corrida personalizada por IA.
+              Planilha de corrida personalizada pelo Coach Boto.
               <br className="hidden sm:block" />
               Cada treino pensado para o seu ritmo, objetivo e evolução.
             </motion.p>

@@ -14,8 +14,8 @@ const steps = [
   {
     number: "02",
     icon: Brain,
-    title: "IA Cria seu Plano",
-    description: "Planilha personalizada gerada na hora.",
+    title: "Coach Monta seu Plano",
+    description: "Planilha personalizada criada pelo Coach Boto.",
   },
   {
     number: "03",

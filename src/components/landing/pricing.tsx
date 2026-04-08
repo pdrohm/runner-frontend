@@ -15,7 +15,7 @@ const plans = [
     badge: null,
     totalLabel: null,
     features: [
-      "Planilha personalizada por IA",
+      "Planilha personalizada pelo Coach Boto",
       "Zonas de pace calculadas",
       "Plano semanal detalhado",
       "Acesso à comunidade WhatsApp",
