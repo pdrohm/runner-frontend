@@ -3,51 +3,42 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 import type { Athlete } from "@/types/athlete";
+import { api } from "@/lib/api";
 
 interface AuthState {
-  token: string | null;
   athlete: Athlete | null;
   isAuthenticated: boolean;
 
-  login: (token: string, athlete: Athlete) => void;
-  logout: () => void;
+  login: (athlete: Athlete) => void;
+  logout: () => Promise<void>;
   setAthlete: (athlete: Athlete) => void;
-  setToken: (token: string) => void;
 }
 
 export const useAuthStore = create<AuthState>()(
   persist(
     (set) => ({
-      token: null,
       athlete: null,
       isAuthenticated: false,
 
-      login: (token, athlete) =>
+      login: (athlete) =>
         set({
-          token,
           athlete,
           isAuthenticated: true,
         }),
 
-      logout: () => {
-        if (typeof window !== "undefined") {
-          localStorage.removeItem("auth-token");
+      logout: async () => {
+        try {
+          await api.post("/api/v1/auth/logout");
+        } catch {
+          // best-effort; clear local state regardless
         }
         set({
-          token: null,
           athlete: null,
           isAuthenticated: false,
         });
       },
 
       setAthlete: (athlete) => set({ athlete }),
-
-      setToken: (token) => {
-        if (typeof window !== "undefined") {
-          localStorage.setItem("auth-token", token);
-        }
-        set({ token });
-      },
     }),
     {
       name: "auth-storage",
@@ -58,8 +49,8 @@ export const useAuthStore = create<AuthState>()(
               getItem: () => null,
               setItem: () => {},
               removeItem: () => {},
-            }
+            },
       ),
-    }
-  )
+    },
+  ),
 );

@@ -6,13 +6,19 @@ import { useAuthStore } from "@/stores/auth.store";
 
 export function useAuthGuard() {
   const router = useRouter();
-  const { token, isAuthenticated } = useAuthStore();
+  const { isAuthenticated } = useAuthStore();
 
   useEffect(() => {
-    if (!token || !isAuthenticated) {
+    if (!isAuthenticated) {
       router.replace("/app/login");
     }
-  }, [token, isAuthenticated, router]);
+  }, [isAuthenticated, router]);
 
-  return { isAuthenticated: !!token && isAuthenticated };
+  useEffect(() => {
+    const onExpired = () => router.replace("/app/login");
+    window.addEventListener("auth:expired", onExpired);
+    return () => window.removeEventListener("auth:expired", onExpired);
+  }, [router]);
+
+  return { isAuthenticated };
 }

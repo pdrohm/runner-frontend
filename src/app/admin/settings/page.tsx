@@ -22,7 +22,7 @@ export default function SettingsPage() {
   const { data: config, isLoading } = useAdminConfig();
   const updateMutation = useUpdateConfig();
 
-  const [primaryColor, setPrimaryColor] = useState("#82ff99");
+  const [primaryColor, setPrimaryColor] = useState("#7ed4ef");
   const [logoUrl, setLogoUrl] = useState("");
   const [headline, setHeadline] = useState("");
   const [subheadline, setSubheadline] = useState("");
@@ -31,7 +31,7 @@ export default function SettingsPage() {
 
   useEffect(() => {
     if (config) {
-      setPrimaryColor(config.primaryColor || "#82ff99");
+      setPrimaryColor(config.primaryColor || "#7ed4ef");
       setLogoUrl(config.logoUrl || "");
       setHeadline(config.headline || "");
       setSubheadline(config.subheadline || "");
@@ -85,7 +85,7 @@ export default function SettingsPage() {
             "flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold transition-all",
             saved
               ? "bg-primary/15 text-primary"
-              : "bg-gradient-to-br from-primary to-primary-dark text-bg hover:shadow-[0_0_24px_rgba(130,255,153,0.15)]",
+              : "bg-gradient-to-br from-primary to-primary-dark text-bg hover:shadow-[0_0_24px_rgba(126,212,239,0.15)]",
             updateMutation.isPending && "opacity-60"
           )}
         >
@@ -131,7 +131,7 @@ export default function SettingsPage() {
                   value={primaryColor}
                   onChange={(e) => setPrimaryColor(e.target.value)}
                   className="flex-1 px-4 py-2.5 bg-surface rounded-xl text-sm text-text font-mono placeholder:text-text-tertiary outline-none focus:ring-1 focus:ring-primary/20 transition-all"
-                  placeholder="#82ff99"
+                  placeholder="#7ed4ef"
                 />
               </div>
             </div>

@@ -25,11 +25,9 @@ function VerifyContent() {
 
     async function verify() {
       try {
-        const { data } = await api.get(`/api/v1/auth/verify?token=${token}`);
-        login(data.token, data.athlete);
-        if (typeof window !== "undefined") {
-          localStorage.setItem("auth-token", data.token);
-        }
+        await api.get(`/api/v1/auth/verify?token=${token}`);
+        const { data: athlete } = await api.get("/api/v1/athlete/me");
+        login(athlete);
         router.replace("/app");
       } catch {
         setError("Link expirado ou inválido. Solicite um novo link de acesso.");

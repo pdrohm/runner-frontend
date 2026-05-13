@@ -3,7 +3,9 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import teambotoLogo from "@/assets/teamboto.png";
 import {
   LayoutDashboard,
   Users,
@@ -66,10 +68,13 @@ function AdminShell({ children }: { children: React.ReactNode }) {
       {/* Desktop Sidebar */}
       <aside className="hidden lg:flex flex-col w-64 bg-surface min-h-screen fixed left-0 top-0 z-30 border-r border-border">
         <div className="p-6">
-          <h1 className="text-xl font-extrabold text-primary tracking-tight font-display">
-            TEAMBOTO
-          </h1>
-          <p className="text-[10px] text-text-muted mt-0.5 uppercase tracking-widest font-semibold">Admin</p>
+          <Image
+            src={teambotoLogo}
+            alt="Botosoares Personal Training"
+            className="h-16 w-auto"
+            style={{ filter: "invert(1) hue-rotate(180deg)" }}
+          />
+          <p className="text-[10px] text-text-muted mt-2 uppercase tracking-widest font-semibold">Admin</p>
         </div>
 
         <nav className="flex-1 px-3 space-y-1">
@@ -121,9 +126,15 @@ function AdminShell({ children }: { children: React.ReactNode }) {
       {/* Mobile Header */}
       <div className="lg:hidden fixed top-0 left-0 right-0 z-40 bg-bg/90 backdrop-blur-2xl border-b border-border">
         <div className="flex items-center justify-between px-5 py-3.5">
-          <h1 className="text-lg font-extrabold text-primary tracking-tight font-display">
-            TEAMBOTO <span className="text-text-muted font-normal text-sm">Admin</span>
-          </h1>
+          <div className="flex items-center gap-2">
+            <Image
+              src={teambotoLogo}
+              alt="Botosoares Personal Training"
+              className="h-11 w-auto"
+              style={{ filter: "invert(1) hue-rotate(180deg)" }}
+            />
+            <span className="text-text-muted font-normal text-sm">Admin</span>
+          </div>
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="p-2 rounded-xl bg-surface-high text-text-muted hover:text-text transition-colors cursor-pointer"
@@ -152,10 +163,13 @@ function AdminShell({ children }: { children: React.ReactNode }) {
               className="lg:hidden fixed left-0 top-0 bottom-0 w-64 bg-surface z-50 flex flex-col border-r border-border"
             >
               <div className="p-6">
-                <h1 className="text-xl font-extrabold text-primary tracking-tight font-display">
-                  TEAMBOTO
-                </h1>
-                <p className="text-[10px] text-text-muted mt-0.5 uppercase tracking-widest font-semibold">Admin</p>
+                <Image
+                  src={teambotoLogo}
+                  alt="Botosoares Personal Training"
+                  className="h-16 w-auto"
+                  style={{ filter: "invert(1) hue-rotate(180deg)" }}
+                />
+                <p className="text-[10px] text-text-muted mt-2 uppercase tracking-widest font-semibold">Admin</p>
               </div>
 
               <nav className="flex-1 px-3 space-y-1">

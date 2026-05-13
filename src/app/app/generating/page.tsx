@@ -56,8 +56,8 @@ export default function GeneratingPage() {
           <motion.div
             className="absolute inset-6 rounded-full border-2 border-transparent"
             style={{
-              borderTopColor: "#82ff99",
-              borderRightColor: "#35b75b",
+              borderTopColor: "#7ed4ef",
+              borderRightColor: "#2da8d1",
             }}
             animate={{ rotate: 360 }}
             transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
@@ -67,7 +67,7 @@ export default function GeneratingPage() {
             animate={{ scale: [1, 1.2, 1] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
-            <div className="w-6 h-6 rounded-full bg-primary shadow-[0_0_20px_rgba(130,255,153,0.5)]" />
+            <div className="w-6 h-6 rounded-full bg-primary shadow-[0_0_20px_rgba(126,212,239,0.5)]" />
           </motion.div>
 
           {[0, 1, 2].map((i) => (

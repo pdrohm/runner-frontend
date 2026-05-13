@@ -95,7 +95,7 @@ export default function GoalPage() {
                 className={cn(
                   "w-full flex items-center gap-4 p-4 rounded-2xl text-left transition-all duration-200 cursor-pointer border-2",
                   selectedDistance === distance.value
-                    ? "border-primary bg-primary/[0.04] shadow-[0_0_24px_rgba(130,255,153,0.08)]"
+                    ? "border-primary bg-primary/[0.04] shadow-[0_0_24px_rgba(126,212,239,0.08)]"
                     : "border-border bg-surface-high hover:border-border hover:bg-surface-high/80"
                 )}
               >

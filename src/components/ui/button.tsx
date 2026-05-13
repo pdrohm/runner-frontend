@@ -17,7 +17,7 @@ interface ButtonProps
 
 const variantStyles: Record<Variant, string> = {
   primary:
-    "bg-gradient-to-br from-primary to-primary-dark text-bg font-bold rounded-xl shadow-[0_0_16px_rgba(130,255,153,0.12)] hover:shadow-[0_0_24px_rgba(130,255,153,0.2)]",
+    "bg-gradient-to-br from-primary to-primary-dark text-bg font-bold rounded-xl shadow-[0_0_16px_rgba(126,212,239,0.12)] hover:shadow-[0_0_24px_rgba(126,212,239,0.2)]",
   secondary:
     "bg-transparent border border-border text-text font-semibold rounded-xl hover:border-primary/30 hover:text-primary",
   ghost:

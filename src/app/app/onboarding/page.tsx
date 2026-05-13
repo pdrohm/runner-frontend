@@ -2,9 +2,11 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Timer, AlertTriangle } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import teambotoLogo from "@/assets/teamboto.png";
 
 export default function OnboardingPage() {
   return (
@@ -17,14 +19,27 @@ export default function OnboardingPage() {
       >
         {/* Welcome */}
         <div className="text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.97 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.15 }}
+            className="flex justify-center mb-4"
+          >
+            <Image
+              src={teambotoLogo}
+              alt="Botosoares Personal Training"
+              priority
+              className="h-32 w-auto"
+              style={{ filter: "invert(1) hue-rotate(180deg)" }}
+            />
+          </motion.div>
           <motion.h1
             initial={{ opacity: 0, scale: 0.97 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.25 }}
             className="text-3xl font-extrabold text-text font-display"
           >
-            Bem-vindo ao{" "}
-            <span className="text-primary">TEAMBOTO</span>
+            Bem-vindo
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}

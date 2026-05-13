@@ -111,7 +111,7 @@ export function Pricing({ quizUrl }: PricingProps) {
 
               {plan.badge && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
-                  <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-primary to-primary-dark text-bg text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full shadow-[0_0_20px_rgba(130,255,153,0.2)]">
+                  <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-primary to-primary-dark text-bg text-[10px] font-bold tracking-wider px-3.5 py-1.5 rounded-full shadow-[0_0_20px_rgba(126,212,239,0.2)]">
                     <Sparkles size={10} />
                     {plan.badge}
                   </span>

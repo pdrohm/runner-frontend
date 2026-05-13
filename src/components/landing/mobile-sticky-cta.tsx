@@ -32,7 +32,7 @@ export function MobileStickyCTA({ quizUrl }: MobileStickyCTAProps) {
         >
           <Link
             href={quizUrl}
-            className="flex items-center justify-center gap-2 w-full bg-gradient-to-br from-primary to-primary-dark text-bg font-bold text-base py-4 rounded-lg shadow-[0_0_30px_rgba(130,255,153,0.2)]"
+            className="flex items-center justify-center gap-2 w-full bg-gradient-to-br from-primary to-primary-dark text-bg font-bold text-base py-4 rounded-lg shadow-[0_0_30px_rgba(126,212,239,0.2)]"
           >
             QUERO MINHA PLANILHA
             <ArrowRight size={18} />

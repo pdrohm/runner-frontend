@@ -221,7 +221,7 @@ export default function ProductsPage() {
             setEditingProduct(null);
             setFormOpen(true);
           }}
-          className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-br from-primary to-primary-dark rounded-xl text-sm font-bold text-bg hover:shadow-[0_0_24px_rgba(130,255,153,0.15)] transition-all"
+          className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-br from-primary to-primary-dark rounded-xl text-sm font-bold text-bg hover:shadow-[0_0_24px_rgba(126,212,239,0.15)] transition-all"
         >
           <Plus size={16} />
           Novo Produto

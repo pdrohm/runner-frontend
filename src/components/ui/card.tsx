@@ -21,7 +21,7 @@ export function Card({
       className={cn(
         "bg-surface-high rounded-2xl p-5 border border-border transition-all duration-300",
         glowOnHover &&
-          "hover:shadow-[0_0_32px_rgba(130,255,153,0.06)] hover:border-primary/10",
+          "hover:shadow-[0_0_32px_rgba(126,212,239,0.06)] hover:border-primary/10",
         onClick && "cursor-pointer",
         className
       )}

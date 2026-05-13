@@ -31,7 +31,7 @@ export function ImageCardGrid({
             className={cn(
               "relative overflow-hidden rounded-2xl aspect-[16/10] text-left transition-all duration-200 cursor-pointer group",
               selected
-                ? "border-2 border-primary shadow-[0_0_24px_rgba(130,255,153,0.12)]"
+                ? "border-2 border-primary shadow-[0_0_24px_rgba(126,212,239,0.12)]"
                 : "border-2 border-transparent"
             )}
           >

@@ -52,10 +52,9 @@ export function Navbar({ tenantSlug, quizUrl }: NavbarProps) {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-6 h-16 md:h-20">
           <a
             href={`/${tenantSlug}`}
-            className="text-xl md:text-2xl font-extrabold font-display tracking-[-0.04em] text-text"
-          >
-            TEAM<span className="text-primary">BOTO</span>
-          </a>
+            aria-label="Botosoares Personal Training"
+            className="block h-14 md:h-20 w-14 md:w-[5.5rem]"
+          />
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (

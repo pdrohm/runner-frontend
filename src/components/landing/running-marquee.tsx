@@ -147,8 +147,8 @@ function MarqueeRow({
               className={cn(
                 "inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 cursor-default select-none",
                 isHighlight
-                  ? "bg-gradient-to-r from-primary to-primary-dark text-bg font-bold shadow-[0_0_30px_rgba(130,255,153,0.3)] scale-110"
-                  : "border border-white/[0.06] text-text-muted/40 hover:text-text hover:border-primary/30 hover:bg-primary/5 hover:shadow-[0_0_20px_rgba(130,255,153,0.15)]"
+                  ? "bg-gradient-to-r from-primary to-primary-dark text-bg font-bold shadow-[0_0_30px_rgba(126,212,239,0.3)] scale-110"
+                  : "border border-white/[0.06] text-text-muted/40 hover:text-text hover:border-primary/30 hover:bg-primary/5 hover:shadow-[0_0_20px_rgba(126,212,239,0.15)]"
               )}
             >
               {word}

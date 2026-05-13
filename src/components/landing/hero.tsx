@@ -11,7 +11,7 @@ interface HeroProps {
 
 export function Hero({ tenantSlug, quizUrl }: HeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-end justify-center overflow-hidden">
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <div
@@ -33,8 +33,8 @@ export function Hero({ tenantSlug, quizUrl }: HeroProps) {
       <div className="absolute inset-0 grain" />
 
       {/* Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 pt-24 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[80vh]">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-6 pt-[26rem] md:pt-24 pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start lg:items-center min-h-[60vh] lg:min-h-[80vh]">
           {/* Left: Main content - takes 7 cols */}
           <div className="lg:col-span-7">
             {/* Micro badge */}
