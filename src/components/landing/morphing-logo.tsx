@@ -50,6 +50,9 @@ export function MorphingLogo() {
 
   return (
     <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.9, ease: "easeOut" }}
       style={{
         position: "fixed",
         top: 0,
@@ -62,16 +65,53 @@ export function MorphingLogo() {
         willChange: "transform",
       }}
     >
-      <Image
-        src={teambotoLogo}
-        alt="Botosoares Personal Training"
-        priority
-        style={{
-          height: `${SOURCE_PX}px`,
-          width: "auto",
-          filter: "invert(1) hue-rotate(180deg)",
+      <motion.div
+        animate={{ y: [0, -8, 0] }}
+        transition={{
+          repeat: Infinity,
+          duration: 5,
+          ease: "easeInOut",
         }}
-      />
+        style={{ position: "relative" }}
+      >
+        {/* Soft pulsing glow behind the logo */}
+        <motion.div
+          animate={{ opacity: [0.35, 0.65, 0.35], scale: [0.9, 1.05, 0.9] }}
+          transition={{
+            repeat: Infinity,
+            duration: 4,
+            ease: "easeInOut",
+          }}
+          aria-hidden
+          style={{
+            position: "absolute",
+            inset: "10% 15%",
+            background:
+              "radial-gradient(circle, rgba(126,212,239,0.35) 0%, rgba(126,212,239,0) 70%)",
+            filter: "blur(28px)",
+            zIndex: -1,
+          }}
+        />
+        <motion.div
+          animate={{ scale: [1, 1.025, 1] }}
+          transition={{
+            repeat: Infinity,
+            duration: 3.5,
+            ease: "easeInOut",
+          }}
+        >
+          <Image
+            src={teambotoLogo}
+            alt="Botosoares Personal Training"
+            priority
+            style={{
+              height: `${SOURCE_PX}px`,
+              width: "auto",
+              filter: "invert(1) hue-rotate(180deg)",
+            }}
+          />
+        </motion.div>
+      </motion.div>
     </motion.div>
   );
 }

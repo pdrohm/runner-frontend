@@ -88,6 +88,17 @@ html {
   animation: float 8s ease-in-out 1s infinite;
 }
 
+/* Shimmer sweep for gradient text */
+@keyframes shimmer-text {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.animate-shimmer-text {
+  background-size: 200% auto;
+  animation: shimmer-text 4s linear infinite;
+}
+
 /* Marquee scroll animations */
 @keyframes marquee-left {
   0% { transform: translateX(0); }
